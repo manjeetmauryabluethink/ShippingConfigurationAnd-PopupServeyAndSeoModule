@@ -1,0 +1,23 @@
+{
+    "name": "bluethinkinc/module-addnewaddressfield",
+    "description": "This is used for adding custom field to shipping address.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Bluethinkinc",
+            "email": "info@bluethink.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bluethinkinc\\AddNewAddressField\\": ""
+        }
+    }
+}

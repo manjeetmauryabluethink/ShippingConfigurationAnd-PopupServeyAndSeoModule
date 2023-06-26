@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+     <tab id="bluethink" translate="label" sortOrder="10">
+            <label>Bluethinkinc</label>
+        </tab>
+        <section id="add_address_field"
+            sortOrder="10"
+            showInWebsite="1"
+            showInStore="1"
+            showInDefault="1"
+            translate="label">
+            <label>Add Address Field</label>
+            <tab>bluethink</tab>
+            <resource>Bluethinkinc_AddNewAddressField::config_bluethinkinc_addnewaddressfield</resource>
+            <group
+                id="general"
+                sortOrder="10"
+                showInWebsite="1"
+                showInStore="1"
+                showInDefault="1"
+                translate="label">
+                <label>General Configuration</label>
+                <field
+                    id="shipping_field_configuration"
+                    translate="label"
+                    sortOrder="20"
+                    showInDefault="1"
+                    showInWebsite="1"
+                    showInStore="1">
+                    <label>Shipping Fields Configuration </label>
+                <frontend_model>Bluethinkinc\AddNewAddressField\Block\Adminhtml\Form\Field\FieldConfig</frontend_model>
+                <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                 <comment>
+                 <![CDATA[
+                    If you need add one more extra field on shipping and Billing address Follow below steps:<br>
+                    <b>1.click on Add button
+                    2.Fill field label
+                    3.Fill Field code
+                    4. select sort order</b>
+                    and click on <mark>save config button</b>
+                ]]>
+                 </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
